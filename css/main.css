@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+nav {
+  background-color: rgb(32, 56, 28);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  display: inline-block;
+  margin-right: 100px;
+  font-size: 25px;
+}
+
+.rudolph {
+  text-align: center;
+  font-size: 32px;
+  margin-top: 0;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 5%;
+  background-color: rgb(105, 210, 87);
+}
+
+p {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 0;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 5%;
+  background-color: rgb(105, 210, 87);
+}
+
+.biomasa {
+  width: 100%;
+  text-align: center;
+  font-size: 32px;
+  padding-bottom: 15px;
+  border: solid rgb(32, 56, 28);
+}
+
+.prd {
+  color: rgb(32, 56, 28);
+  text-align: center;
+  font-size: 32px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: solid rgb(32, 56, 28);
+}
+
+.filtros {
+  padding: 40px 20px 30px 30px;
+}
+.filtros select {
+  color: rgb(32, 56, 28);
+  border: none;
+  background-color: whitesmoke;
+  font-size: 1em;
+}
+.filtros a {
+  color: whitesmoke;
+  font-size: 1em;
+  text-decoration: none;
+  margin-bottom: 4px;
+  text-transform: lowercase;
+}
+.filtros a:hover {
+  color: rgb(32, 56, 28);
+}
+.filtros span {
+  display: block;
+  margin: 10px 0;
+  letter-spacing: 1px;
+  font-size: 1em;
+}
+.filtros li {
+  padding-left: 10px;
+  list-style: none;
+}
+
+.showroom {
+  display: grid;
+  grid-template-columns: 15% repeat(3, 28%);
+  grid-template-rows: repeat(2, 50%);
+  gap: 10px;
+  grid-template-areas: "Filtros caldera1 caldera2 caldera3" "Filtros caldera4 caldera5 caldera6";
+}
+.showroom .filtros {
+  grid-area: Filtros;
+  background-color: rgb(105, 210, 87);
+}
+.showroom .caldera1 {
+  grid-area: caldera1;
+  background-color: rgb(105, 210, 87);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.showroom .caldera2 {
+  grid-area: caldera2;
+  background-color: rgb(105, 210, 87);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.showroom .caldera3 {
+  grid-area: caldera3;
+  background-color: rgb(105, 210, 87);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.showroom .caldera4 {
+  grid-area: caldera4;
+  background-color: rgb(105, 210, 87);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.showroom .caldera5 {
+  grid-area: caldera5;
+  background-color: rgb(105, 210, 87);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.showroom .caldera6 {
+  grid-area: caldera6;
+  background-color: rgb(105, 210, 87);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.showroom img {
+  width: 45%;
+  padding-top: 10px;
+}
+.showroom button {
+  color: rgb(32, 56, 28);
+  padding-right: 2px;
+  padding-left: 2px;
+}
+
+.informacion {
+  display: grid;
+  grid-template-columns: repeat(2, 48%);
+  grid-template-rows: 10% repeat(3, 25%);
+  grid-template-areas: "Titulo Titulo" "Parrafo1 Parrafo2" "Parrafo3 Parrafo3" "carousel carousel";
+}
+.informacion .parrafo1 {
+  grid-area: Parrafo1;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(105, 210, 87);
+  color: rgb(32, 56, 28);
+  font-size: 22px;
+  padding: 5px;
+}
+.informacion .parrafo2 {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(105, 210, 87);
+  color: rgb(32, 56, 28);
+  grid-area: Parrafo2;
+  font-size: 22px;
+  padding: 5px;
+}
+.informacion .parrafo3 {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(105, 210, 87);
+  color: rgb(32, 56, 28);
+  grid-area: Parrafo3;
+  justify-content: center;
+  font-size: 28px;
+  padding: 5px;
+}
+.informacion .carousel {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(105, 210, 87);
+  color: rgb(32, 56, 28);
+  align-items: center;
+  justify-content: center;
+  grid-area: carousel;
+  padding: 10px;
+}
+
+.titulo {
+  grid-area: Titulo;
+  text-align: center;
+  font-size: 32px;
+  padding-bottom: 15px;
+  border: solid rgb(32, 56, 28);
+}
+
+.plantaDeBiomasa {
+  width: 650px;
+}
+
+button {
+  color: rgb(32, 56, 28);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  color: white;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.logoPlantita {
+  width: 30%;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+header {
+  background-color: rgb(105, 210, 87);
+}
+
+main {
+  background-color: rgb(105, 210, 87);
+  padding: 10px 10px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 54px;
+}
+
+.banner {
+  width: 100%;
+  height: 425px;
+}
+
+ul {
+  list-style: none;
+}
+
+footer {
+  background-color: rgb(32, 56, 28);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.pie {
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+  grid-template-rows: repeat(1, 100%);
+  grid-template-areas: "pages logoF redes";
+}
+.pie .pages {
+  grid-area: pages;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.pie .logoplantita2 {
+  grid-area: logoF;
+  display: block;
+  margin: auto;
+}
+.pie .siguenos {
+  grid-area: redes;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.pie .appsLogo {
+  width: 45px;
+  height: 45px;
+  padding-bottom: 5px;
+}
+
+/*# sourceMappingURL=main.css.map */

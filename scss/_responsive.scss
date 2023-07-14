@@ -1,0 +1,64 @@
+@media (width < 768px){
+    .showroom{
+        grid-template-columns: repeat(3,33%);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+        "Filtros caldera1 caldera2"
+        "Filtros caldera3 caldera4"
+        "Filtros caldera5 caldera6";
+        gap: 5px;
+        padding-bottom: 5px;
+    }
+    .informacion{
+        grid-template-columns: repeat(2,100%);
+        grid-template-rows: 10% repeat(3,25%);
+        grid-template-areas: 
+        "Titulo"
+        "Parrafo1"
+        "Parrafo2"
+        "Parrafo3";
+        padding: 5px;
+        font-size: 1em;
+        gap: 10px;
+    }
+    .informacion .parrafo3{
+        font-size: 22px;
+     }
+     .pie img{
+       width: 100%;
+     }
+     }
+    
+    @media (width < 400px){
+     .showroom{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7,14%);
+        grid-template-areas:
+        "Filtros"
+        "caldera1"
+        "caldera2"
+        "caldera3"
+        "caldera4"
+        "caldera5"
+        "caldera6";
+        padding-bottom: 5px;
+     }
+     .informacion{
+        grid-template-columns: repeat(1,100%);
+        grid-template-rows: 10% repeat(3,28%);
+        grid-template-areas: 
+        "Titulo"
+        "Parrafo1"
+        "Parrafo2"
+        "Parrafo3"
+        "parrafo3";
+        padding: 5px;
+        gap: 10px;
+     }
+     .informacion .parrafo3{
+        font-size: 22px;
+     }
+     .banner{
+        height: 200px;
+     }
+    }

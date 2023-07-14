@@ -1,0 +1,21 @@
+// variabales globales 
+
+//colores
+$mainColor:  rgb(32, 56, 28); 
+$secondaryColor:  rgb(105, 210, 87);
+$keyColor: black;
+$white: whitesmoke;
+
+//mainfonts
+$primaryFont: 'roboto', sans-serif;
+$secondaryFont: Arial, Helvetica, sans-serif;
+
+//mixins
+@mixin textos($size, $color, $padding ){
+    font-size: $size;
+    color: $color;
+    padding: $padding;
+    font-family: $primaryFont;
+}
+
+

@@ -1,0 +1,59 @@
+.informacion{
+    display: grid;
+    grid-template-columns: repeat(2, 48%);
+    grid-template-rows: 10% repeat(3, 25%);
+    grid-template-areas: 
+    "Titulo Titulo"
+    "Parrafo1 Parrafo2"
+    "Parrafo3 Parrafo3"
+    "carousel carousel";
+    .parrafo1{
+        grid-area: Parrafo1;
+        display: flex;
+        flex-direction: row;
+        background-color:  $secondaryColor;
+        color: $mainColor;
+        font-size: 22px;
+        padding: 5px;
+}
+        .parrafo2{
+            display: flex;
+            flex-direction: row;
+            background-color:  $secondaryColor;
+            color: $mainColor;
+            grid-area: Parrafo2;
+            font-size: 22px;
+            padding: 5px;
+}
+            .parrafo3{
+                display: flex;
+                flex-direction: row;
+                background-color: $secondaryColor;
+                color: $mainColor;
+                grid-area: Parrafo3;
+                justify-content: center;
+                font-size: 28px;
+                padding: 5px;
+}
+                .carousel{
+                    display: flex;
+                    flex-direction: row;
+                    background-color: $secondaryColor;
+                    color:$mainColor ;
+                    align-items: center;
+                    justify-content: center;
+                    grid-area: carousel;
+                    padding: 10px;
+}
+}
+.titulo{
+    grid-area: Titulo;
+    text-align: center;
+    font-size: 32px;
+    padding-bottom: 15px;
+    border: solid $mainColor;
+}
+.plantaDeBiomasa{
+    width: 650px;
+}
+    

@@ -1,0 +1,106 @@
+.prd{
+    color: $mainColor;
+    text-align: center;
+    font-size: 32px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: solid $mainColor;
+}
+
+.filtros{
+    padding: 40px 20px 30px 30px;
+   
+     select{
+        color:$mainColor;
+        border: none;
+        background-color: $white;
+        font-size: 1em;}
+            a{
+            color: $white;
+            font-size: 1em;
+            text-decoration: none;
+            margin-bottom: 4px;
+            text-transform: lowercase;}
+                a:hover{
+                    color: $mainColor;}
+
+                   span{
+                    display: block;
+                    margin: 10px 0;
+                    letter-spacing: 1px;
+                    font-size: 1em; }
+                        li{
+                        padding-left: 10px;
+                        list-style: none;}
+}
+ 
+
+
+
+.showroom{
+        display: grid;
+        grid-template-columns: 15% repeat(3,28%);
+        grid-template-rows: repeat(2, 50%);
+        gap: 10px;
+        grid-template-areas: 
+        "Filtros caldera1 caldera2 caldera3"
+        "Filtros caldera4 caldera5 caldera6";
+
+        .filtros{
+            grid-area: Filtros;
+            background-color: rgb(105, 210, 87)}
+                .caldera1{
+                    grid-area: caldera1;
+                    background-color:  rgb(105, 210, 87);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;}
+
+                    .caldera2{
+                        grid-area: caldera2;
+                        background-color:  rgb(105, 210, 87);
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+}
+                        .caldera3{
+                            grid-area: caldera3;
+                            background-color:  rgb(105, 210, 87);
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+}
+                            .caldera4{
+                                grid-area: caldera4;
+                                background-color:  rgb(105, 210, 87);
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+}
+                                .caldera5{
+                                    grid-area: caldera5;
+                                    background-color:  rgb(105, 210, 87);
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+}
+                                    .caldera6{
+                                        grid-area: caldera6;
+                                        background-color:  rgb(105, 210, 87);
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: center;
+}
+                                        img{
+                                            width: 45%;
+                                            padding-top: 10px;
+}
+                                            button{
+                                                color: rgb(32, 56, 28);
+                                                padding-right: 2px;
+                                                padding-left: 2px;
+}
+}
+
+
+
