@@ -6,6 +6,8 @@
 @import "_nosotros";
 @import "_contacto";
 @import "_ubicacion";
+@import "_responsive";
+@import "_error404";
 
 *{ 
     padding: 0;
@@ -19,6 +21,7 @@
     margin-top: 5px ;
     margin-left:5px;
 }
+
 header{
     background-color:$secondaryColor;
 }

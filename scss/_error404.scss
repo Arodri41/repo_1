@@ -1,0 +1,36 @@
+.error{
+    background-color: rgb(244, 248, 240);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;}
+        
+        .imgerror{
+            width: 25%;}
+            
+            .err{
+            color: $secondaryColor;
+            font-size: 30px;}
+                
+                .errorbtn{
+                    padding: 15px 30px;
+                    border-radius: 15px;
+}
+}
+
+
+
+
+
+
+
+
+
+
