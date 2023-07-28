@@ -1,0 +1,28 @@
+.ubicacion{
+    display: grid;
+    grid-template-columns: repeat(2, 48%);
+    grid-template-rows: 100%;
+    grid-template-areas: 
+    "maps datos";
+
+    .maps{
+        grid-area: maps;
+        display: flex;
+        flex-direction: row;
+        background-color:  $secondaryColor;
+        color: $mainColor;
+        font-size: 22px;
+        padding: 5px;
+}
+
+        .datos{
+            grid-area: datos;
+            display: flex;
+            flex-direction: row;
+            background-color:  $secondaryColor;
+            color: $mainColor;
+            font-size: 22px;
+            padding: 5px;
+}
+}
+

@@ -48,57 +48,56 @@
 
         .filtros{
             grid-area: Filtros;
-            background-color: rgb(105, 210, 87)}
-                .caldera1{
-                    grid-area: caldera1;
-                    background-color:  rgb(105, 210, 87);
+            background-color: $secondaryColor}
+
+                @mixin calderas{
+                    background-color: $secondaryColor;
                     display: flex;
                     flex-direction: column;
                     align-items: center;}
+                
+                .caldera1{
+                    @include calderas; 
+                    grid-area: caldera1;
+                }
+                    
 
                     .caldera2{
+                        @include calderas;
                         grid-area: caldera2;
-                        background-color:  rgb(105, 210, 87);
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
+                        
 }
                         .caldera3{
+                            @include calderas;
                             grid-area: caldera3;
-                            background-color:  rgb(105, 210, 87);
-                            display: flex;
-                            flex-direction: column;
-                            align-items: center;
+                            
 }
                             .caldera4{
+                                @include calderas;
                                 grid-area: caldera4;
-                                background-color:  rgb(105, 210, 87);
-                                display: flex;
-                                flex-direction: column;
-                                align-items: center;
+                                
 }
                                 .caldera5{
+                                    @include calderas;
                                     grid-area: caldera5;
-                                    background-color:  rgb(105, 210, 87);
-                                    display: flex;
-                                    flex-direction: column;
-                                    align-items: center;
+                                   
 }
                                     .caldera6{
+                                        @include calderas;
                                         grid-area: caldera6;
-                                        background-color:  rgb(105, 210, 87);
-                                        display: flex;
-                                        flex-direction: column;
-                                        align-items: center;
+                                       
 }
                                         img{
                                             width: 45%;
                                             padding-top: 10px;
 }
                                             button{
-                                                color: rgb(32, 56, 28);
+                                                color: $white;
+                                                background-color: $mainColor;
                                                 padding-right: 2px;
                                                 padding-left: 2px;
+                                                
+                                            
 }
 }
 
