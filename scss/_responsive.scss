@@ -8,6 +8,9 @@
         "Filtros caldera5 caldera6";
         gap: 5px;
         padding-bottom: 5px;
+        h2{
+         font-size: medium;
+     }
     }
     .informacion{
         grid-template-columns: repeat(2,100%);
@@ -31,6 +34,27 @@
       width: 75%;
       height: 75%;
    }
+   .texto{
+      font-size: 16px;
+   }
+   .ubicacion{
+      display: grid;
+      grid-template-columns: repeat(1, 100%);
+      grid-template-rows: repeat(2, 48%);
+      grid-template-areas: 
+      "maps"
+      "datos";
+  
+      .maps{
+          flex-direction: column;
+  }
+  
+          .datos{
+              
+              flex-direction: column;
+              font-size: 22px;     
+  }
+  }
      }
     
     @media (width < 400px){
@@ -46,16 +70,19 @@
         "caldera5"
         "caldera6";
         padding-bottom: 5px;
+        h2{
+         font-size: small;
+     }
      }
      .informacion{
         grid-template-columns: repeat(1,100%);
-        grid-template-rows: 10% repeat(3,28%);
+        grid-template-rows: 10% repeat(4,15%);
         grid-template-areas: 
         "Titulo"
         "Parrafo1"
         "Parrafo2"
         "Parrafo3"
-        "parrafo3";
+        "carousel";
         padding: 5px;
         gap: 10px;
      }
@@ -66,4 +93,25 @@
         width: 50%;
         height: 50%;
      }
+     .texto{
+      font-size: 16px;
+   }
+   .ubicacion{
+      display: grid;
+      grid-template-columns: repeat(1, 100%);
+      grid-template-rows: 70% 28%;
+      grid-template-areas: 
+      "maps"
+      "datos";
+  
+      .maps{
+          flex-direction: column;
+  }
+  
+          .datos{
+              
+              flex-direction: column;
+              font-size: 19px;     
+  }
+  }
     }

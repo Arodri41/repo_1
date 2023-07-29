@@ -1,29 +1,30 @@
 .informacion{
     display: grid;
     grid-template-columns: repeat(2, 48%);
-    grid-template-rows: 10% repeat(3, 25%);
+    grid-template-rows: 10% 24% repeat(2, 16%);
+    gap: 10px;
     grid-template-areas: 
     "Titulo Titulo"
     "Parrafo1 Parrafo2"
+    ". ."
     "Parrafo3 Parrafo3"
     "carousel carousel";
     .parrafo1{
         grid-area: Parrafo1;
         display: flex;
         flex-direction: row;
+        text-align: start;
+        justify-content: right;
         background-color:  $secondaryColor;
         color: $mainColor;
-        font-size: 22px;
+        font-size: 19px;
         padding: 5px;
+        margin-bottom: 20px
 }
         .parrafo2{
-            display: flex;
-            flex-direction: row;
-            background-color:  $secondaryColor;
-            color: $mainColor;
+            @extend .parrafo1;
             grid-area: Parrafo2;
-            font-size: 22px;
-            padding: 5px;
+            
 }
             .parrafo3{
                 display: flex;
@@ -32,7 +33,8 @@
                 color: $mainColor;
                 grid-area: Parrafo3;
                 justify-content: center;
-                font-size: 28px;
+                font-size: 24px;
+                margin-top: 10px;
                 padding: 5px;
 }
                 .carousel{
@@ -43,7 +45,7 @@
                     align-items: center;
                     justify-content: center;
                     grid-area: carousel;
-                    padding: 10px;
+                    padding: 5px;
 }
 }
 .titulo{
